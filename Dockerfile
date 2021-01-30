@@ -17,4 +17,5 @@ RUN sed -ri "s|ちい。|さい。|g" /usr/local/apache2/htdocs/difff.pl
 RUN sed -ri "s|ちい。|さい。|g" /usr/local/apache2/htdocs/save.cgi
 RUN chown daemon /usr/local/apache2/htdocs/data/
 RUN chgrp daemon /usr/local/apache2/htdocs/data/
+RUN echo "Options -Indexes" > /usr/local/apache2/htdocs/data/.htaccess
 EXPOSE 80
