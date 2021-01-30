@@ -4,7 +4,7 @@ RUN wget https://github.com/meso-cacase/difff/archive/master.zip
 RUN unzip master
 RUN rm -f /usr/local/apache2/htdocs/index.html
 RUN cp -r difff-master/. /usr/local/apache2/htdocs/
-RUN rm -rf diff-master
+RUN rm -rf difff-master
 RUN sed -ri 's/#LoadModule cgid_module/LoadModule cgid_module/g; \
              s/#LoadModule rewrite_module/LoadModule rewrite_module/g; \
              s/AllowOverride None/AllowOverride All/g; \
