@@ -7,5 +7,5 @@
 $ cd ~
 $ wget https://raw.githubusercontent.com/kashihara-city/difff_dockerfile/main/Dockerfile
 $ docker build -t difff ./
-$ docker run --name difff -d -v difffdata:/usr/local/apache2/htdocs/data -p 80:80 --restart unless-stopped difff
+$ docker run --name difff -d -v difffdata:/usr/local/apache2/htdocs/data -p 80:80 difff
 ```
